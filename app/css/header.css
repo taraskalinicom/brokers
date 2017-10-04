@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,latin-ext");
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s; }
+
+@-webkit-keyframes shake {
+  from {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  20%, 60% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  40%, 80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+  to {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+@keyframes shake {
+  from {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  20%, 60% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  40%, 80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+  to {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  max-width: 1920px;
+  margin: 0 auto; }
+
+header {
+  background-image: url("../img/bg-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 460px;
+  padding-top: 15px; }
+  @media (max-width: 770px) {
+    header {
+      padding-top: 0; } }
+
+.h-mnu {
+  margin-left: -15px;
+  position: relative; }
+  @media (max-width: 770px) {
+    .h-mnu ul {
+      width: 320px;
+      position: absolute;
+      top: 0;
+      left: -120%;
+      text-align: center;
+      background-color: #262d37;
+      z-index: 1;
+      -webkit-transition: .5s all;
+      transition: .5s all; }
+      .h-mnu ul.is-active {
+        left: 0; } }
+  .h-mnu ul li a {
+    float: left;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-transition: .2s all;
+    transition: .2s all;
+    background-color: transparent;
+    padding: 6px 15px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px; }
+    @media (max-width: 770px) {
+      .h-mnu ul li a {
+        float: none;
+        width: 100%;
+        padding: 22px 0;
+        display: block;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        border-bottom: 1px solid white;
+        border-right: 1px solid white; } }
+    .h-mnu ul li a:hover, .h-mnu ul li a:focus {
+      background-color: #59d9a5;
+      color: #000000; }
+
+.login {
+  line-height: 32px; }
+  @media (max-width: 770px) {
+    .login {
+      padding-top: 15px; } }
+  .login a {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-transition: .2s all;
+    transition: .2s all; }
+    .login a:hover, .login a:focus {
+      color: #999999; }
+  .login span {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 4px; }
+
+.hamburger {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: none !important;
+  z-index: 2; }
+  @media (max-width: 770px) {
+    .hamburger {
+      display: block !important; } }
+
+.header-content {
+  text-align: center; }
+  .header-content h1 {
+    margin-top: 170px; }
+    @media (max-width: 550px) {
+      .header-content h1 {
+        font-size: 50px;
+        line-height: 25px; }
+        .header-content h1 span {
+          font-size: 20px; } }
+    @media (max-width: 380px) {
+      .header-content h1 {
+        font-size: 35px;
+        line-height: 22px; }
+        .header-content h1 span {
+          font-size: 17px; } }
+  .header-content a {
+    margin: 0 7px;
+    margin-top: 30px; }
+    @media (max-width: 482px) {
+      .header-content a {
+        margin-top: 15px; } }
+
+.btn-green {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  border: 3px solid #59d9a4;
+  padding: 12px 30px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px; }
+  .btn-green:hover, .btn-green:focus {
+    background-color: #59d9a4;
+    color: black; }
+
+.btn-blue {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  border: 3px solid #59d5da;
+  padding: 12px 25px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px; }
+  .btn-blue:hover, .btn-blue:focus {
+    background-color: #59d5da;
+    color: black; }
