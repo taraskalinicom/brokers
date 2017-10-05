@@ -338,6 +338,17 @@ footer {
       footer .h-mnu ul li a {
         float: none; } }
 
+.footer-mod {
+  padding: 8px 0; }
+
+.text-content {
+  padding: 40px 0; }
+  .text-content p {
+    margin-top: 20px; }
+  .text-content .text-img {
+    margin-top: 20px;
+    width: 100%; }
+
 .allert, .allert_tell {
   position: absolute;
   z-index: 20;
@@ -452,3 +463,9 @@ h2 {
   width: 24px;
   height: 14px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOBAMAAADH1sFNAAAAAXNSR0IB2cksfwAAACFQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbdFIwQAAAAt0Uk5TAwAcFwEZBh0FGALxM1AyAAAAZUlEQVR4nGNgFIQDAQZlRxhbxJQh3QTGcS5jECuGSomYJzIIwqScywQZBKFSQAkgByoFlABxJCqBUiLTE8EcwfYpgoKeQAkwBygFlgBzgFJgCQhHohIsAeEItoMloByphRDOEAEAW9EZppiF1HcAAAAASUVORK5CYII=); }
+
+p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; }

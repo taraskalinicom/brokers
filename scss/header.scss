@@ -74,7 +74,7 @@ header{
             @media (max-width: 770px){
               float: none;
               width: 100%;
-              padding: 22px 0;
+              padding: 21px 0;
               display: block;
               border-radius: 0;
               border-bottom: 1px solid white;
@@ -278,5 +278,99 @@ header{
     display: none;
   }
 }
+
+.header-mod{
+  background-image: none;
+  min-height: auto;
+  background-color: #262d37;
+  padding-bottom: 15px;
+}
+
+.text-content{
+  h2{
+    text-align: left;
+  }
+}
+
+.bread-crumbs{
+  margin-bottom: 5px;
+  a{
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: underline;
+  }
+  span{
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 5px;
+  }
+}
+
+.news-item{
+  margin-top: 25px;
+  img{
+    width: 180px;
+    display: inline-block;
+    vertical-align: middle;
+    @if $adaptive == true {
+      @media (max-width: 1110px){
+        display: block;
+        width: 250px;
+      }
+      @media (max-width: 400px){
+        width: 100%;
+      }
+    }
+  }
+  .news-right{
+    display: inline-block;
+    vertical-align: middle;
+    width: 82%;
+    margin-left: 10px;
+    @if $adaptive == true {
+      @media (max-width: 1110px){
+        margin-left: 0;
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+      }
+    }
+    p{
+      font-weight: 300;
+      line-height: 18px;
+      margin-top: 5px;
+    }
+    h6{
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .news-date{
+      color: #808080;
+      font-size: 13px;
+      font-weight: 300;
+    }
+  }
+}
+
+.news{
+  h2{
+    margin-bottom: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
