@@ -25,6 +25,61 @@ $(function() {
         event.stopPropagation();
     });
 
+    $('.ques-item1').on('click',function(){
+        $(this).toggleClass('is-active');
+        $(".ques-item1 .ques-hide").toggleClass('is-active');
+    });
+    $(document).on("click",function(event){
+        if( $(event.target).closest(".ques-item1 .ques-hide,.ques-item1").length )return;
+        $('.ques-item1').removeClass('is-active');
+        $(".ques-item1 .ques-hide").removeClass('is-active');
+        event.stopPropagation();
+    });
+
+    $('.ques-item2').on('click',function(){
+        $(this).toggleClass('is-active');
+        $(".ques-item2 .ques-hide").toggleClass('is-active');
+    });
+    $(document).on("click",function(event){
+        if( $(event.target).closest(".ques-item2 .ques-hide,.ques-item2").length )return;
+        $('.ques-item2').removeClass('is-active');
+        $(".ques-item2 .ques-hide").removeClass('is-active');
+        event.stopPropagation();
+    });
+
+    $('.ques-item3').on('click',function(){
+        $(this).toggleClass('is-active');
+        $(".ques-item3 .ques-hide").toggleClass('is-active');
+    });
+    $(document).on("click",function(event){
+        if( $(event.target).closest(".ques-item3 .ques-hide,.ques-item3").length )return;
+        $('.ques-item3').removeClass('is-active');
+        $(".ques-item3 .ques-hide").removeClass('is-active');
+        event.stopPropagation();
+    });
+
+    $('.ques-item4').on('click',function(){
+        $(this).toggleClass('is-active');
+        $(".ques-item4 .ques-hide").toggleClass('is-active');
+    });
+    $(document).on("click",function(event){
+        if( $(event.target).closest(".ques-item4 .ques-hide,.ques-item4").length )return;
+        $('.ques-item4').removeClass('is-active');
+        $(".ques-item4 .ques-hide").removeClass('is-active');
+        event.stopPropagation();
+    });
+
+    $('.ques-item5').on('click',function(){
+        $(this).toggleClass('is-active');
+        $(".ques-item5 .ques-hide").toggleClass('is-active');
+    });
+    $(document).on("click",function(event){
+        if( $(event.target).closest(".ques-item5 .ques-hide,.ques-item5").length )return;
+        $('.ques-item5').removeClass('is-active');
+        $(".ques-item5 .ques-hide").removeClass('is-active');
+        event.stopPropagation();
+    });
+
 });
 
 //Форма отправки 2.0
