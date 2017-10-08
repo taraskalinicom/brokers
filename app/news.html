@@ -55,7 +55,7 @@
                   </ul>
                 </div>
                 <div class="pull-right">
-                  <div class="login"><a href="#">Вход</a><span>/</span><a href="#">Регистрация</a></div>
+                  <div class="login"><a href="#popup1" class="popup">Вход</a><span>/</span><a href="#popup2" class="popup">Регистрация</a></div>
                 </div>
               </div>
             </div>
@@ -138,6 +138,78 @@
         </div>
       </div>
     </footer>
+    <div id="popup1" class="popup-all mfp-hide form-block">
+      <h3>Авторизация</h3>
+      <form class="form-shake">
+        <input type="text" name="email" placeholder="E-mail" required>
+        <input type="text" name="pass" placeholder="Пароль" required>
+        <button name="send" class="btn btn-br">Авторизоваться</button>
+      </form>
+    </div>
+    <div id="popup2" class="popup-all mfp-hide form-block">
+      <h3>Зарегистрироваться</h3>
+      <form class="form-shake">
+        <label>
+          <p>E-mail</p>
+          <input type="text" name="email" required>
+        </label>
+        <label>
+          <p>Пароль</p>
+          <input type="text" name="pass" required>
+        </label>
+        <label>
+          <p>Пароль еще раз</p>
+          <input type="text" name="passrepeat" required>
+        </label>
+        <button name="send" class="btn btn-br">Авторизоваться</button>
+      </form>
+    </div>
+    <div id="popup3" class="popup-all mfp-hide form-block">
+      <h3>Изменить пароль</h3>
+      <form class="form-shake">
+        <label>
+          <p>Старый пароль</p>
+          <input type="text" name="oldpass" required>
+        </label>
+        <label>
+          <p>Новый пароль</p>
+          <input type="text" name="newpass" required>
+        </label>
+        <button name="send" class="btn btn-br">Сохранить</button>
+      </form>
+    </div>
+    <div id="popup4" class="popup-all mfp-hide form-block">
+      <h3>Добавить счет брокера</h3>
+      <form class="form-shake">
+        <label>
+          <p>Выберите брокера</p>
+          <input type="text" name="broker" required>
+        </label>
+        <label>
+          <p>Номер счета</p>
+          <input type="text" name="number" required>
+        </label>
+        <button name="send" class="btn btn-br">Сохранить</button>
+      </form>
+    </div>
+    <div id="popup5" class="popup-all mfp-hide form-block">
+      <h3>Вывести деньги</h3>
+      <form class="form-shake">
+        <label>
+          <p>Сумма (не более суммы баланса)</p>
+          <input type="text" name="summ" required>
+        </label>
+        <label>
+          <p>Платежная система</p>
+          <input type="text" name="system" required>
+        </label>
+        <label>
+          <p>Номер карты/счета</p>
+          <input type="text" name="card" required>
+        </label>
+        <button name="send" class="btn btn-br">Заказать вывод</button>
+      </form>
+    </div>
     <script>
       var scr = {"scripts":[
           {"src" : "js/libs.js", "async" : false},

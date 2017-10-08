@@ -360,7 +360,8 @@ footer {
   cursor: default; }
 
 .er_border, .error {
-  border: 1px solid red !important; }
+  border: 1px solid red !important;
+  background-image: none !important; }
 
 .allert:hover, .allert_tell:hover {
   text-decoration: none; }

@@ -15,6 +15,58 @@ footer.footer-mod
                                 a(href="#") F.A.Q
                             li
                                 a(href="#") Контакты
+#popup1.popup-all.mfp-hide.form-block
+    h3 Авторизация
+    form.form-shake
+        input(type="text" name="email" placeholder="E-mail" required)
+        input(type="text" name="pass" placeholder="Пароль" required)
+        button.btn.btn-br(name="send") Авторизоваться
+#popup2.popup-all.mfp-hide.form-block
+    h3 Зарегистрироваться
+    form.form-shake
+        label
+            p E-mail
+            input(type="text" name="email" required)
+        label
+            p Пароль
+            input(type="text" name="pass" required)
+        label
+            p Пароль еще раз
+            input(type="text" name="passrepeat" required)
+        button.btn.btn-br(name="send") Авторизоваться
+#popup3.popup-all.mfp-hide.form-block
+    h3 Изменить пароль
+    form.form-shake
+        label
+            p Старый пароль
+            input(type="text" name="oldpass" required)
+        label
+            p Новый пароль
+            input(type="text" name="newpass" required)
+        button.btn.btn-br(name="send") Сохранить
+#popup4.popup-all.mfp-hide.form-block
+    h3 Добавить счет брокера
+    form.form-shake
+        label
+            p Выберите брокера
+            input(type="text" name="broker" required)
+        label
+            p Номер счета
+            input(type="text" name="number" required)
+        button.btn.btn-br(name="send") Сохранить
+#popup5.popup-all.mfp-hide.form-block
+    h3 Вывести деньги
+    form.form-shake
+        label
+            p Сумма (не более суммы баланса)
+            input(type="text" name="summ" required)
+        label
+            p Платежная система
+            input(type="text" name="system" required)
+        label
+            p Номер карты/счета
+            input(type="text" name="card" required)
+        button.btn.btn-br(name="send") Заказать вывод
 script.
     var scr = {"scripts":[
         {"src" : "js/libs.js", "async" : false},

@@ -630,6 +630,13 @@ header{
 .pers-item{
   margin-top: 50px;
   position: relative;
+  height: 138px;
+  @if $adaptive == true {
+    @media (max-width: 750px){
+      margin-top: 30px;
+      height: auto;
+    }
+  }
   &:after{
     position: absolute;
     content: '';
@@ -637,8 +644,13 @@ header{
     background-color: rgba(0, 0, 0, .15);
     height: 1px;
     width: 100%;
-    bottom: -47px;
+    bottom: 67px;
     left: 0;
+    @if $adaptive == true {
+      @media (max-width: 750px){
+        display: none;
+      }
+    }
   }
   h4{
     color: #000000;
@@ -650,6 +662,27 @@ header{
 
 .pers-block{
   float: left;
+  position: relative;
+  &:after{
+    position: absolute;
+    content: '';
+    display: none;
+    background-color: rgba(0, 0, 0, .15);
+    height: 1px;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    @if $adaptive == true {
+      @media (max-width: 750px){
+        display: block;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 750px){
+      float: none;
+    }
+  }
 }
 
 .pers-line{
@@ -678,11 +711,252 @@ header{
 
 .pers-head{
   margin-bottom: 20px;
+  @if $adaptive == true {
+    @media (max-width: 750px){
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+  }
 }
 
 .pers-block-1{
-
+  width: 32%;
+  @if $adaptive == true {
+    @media (max-width: 1100px){
+      width: 28%;
+    }
+    @media (max-width: 950px){
+      width: 20%;
+    }
+    @media (max-width: 750px){
+      width: 100%;
+    }
+  }
 }
+
+.pers-block-2{
+  width: 28%;
+  @if $adaptive == true {
+    @media (max-width: 950px){
+      width: 20%;
+    }
+    @media (max-width: 750px){
+      width: 100%;
+    }
+  }
+}
+
+.pers-block-3{
+  width: 20%;
+  @if $adaptive == true {
+    @media (max-width: 750px){
+      width: 100%;
+    }
+  }
+}
+
+.pers-block-4{
+  width: 15%;
+  @if $adaptive == true {
+    @media (max-width: 950px){
+      width: 20%;
+    }
+    @media (max-width: 750px){
+      display: none;
+    }
+  }
+}
+
+.pers-block-5{
+  @if $adaptive == true {
+    @media (max-width: 750px){
+      display: none;
+    }
+  }
+}
+
+.pers-block-media{
+  .pers-line{
+    p{
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px;
+    }
+    a{
+      display: none;
+      @if $adaptive == true {
+        @media (max-width: 750px){
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+.add{
+  margin-top: 30px;
+  a{
+    margin-right: 10px;
+  }
+  span{
+    @if $adaptive == true {
+      @media (max-width: 750px){
+        display: block;
+        margin-top: 5px;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.pers-block-6{
+  width: 14%;
+  @if $adaptive == true {
+    @media (max-width: 750px){
+      width: 20%;
+    }
+    @media (max-width: 450px){
+      width: 26%;
+    }
+  }
+}
+
+.pers-block-7{
+  width: 75%;
+  @if $adaptive == true {
+    @media (max-width: 750px){
+      width: 60%;
+    }
+    @media (max-width: 450px){
+      width: 56%;
+    }
+  }
+}
+
+.pers-block-8{
+  width: auto;
+}
+
+.pers-item-second{
+  &:after{
+    @if $adaptive == true {
+      @media (max-width: 750px){
+        display: block;
+        top: 81px;
+      }
+    }
+  }
+  .pers-line{
+    @if $adaptive == true {
+      @media (max-width: 750px){
+        margin-top: 20px;
+      }
+    }
+  }
+  .pers-block{
+    &:after{
+      @if $adaptive == true {
+        @media (max-width: 750px){
+          display: none;
+        }
+      }
+    }
+    @if $adaptive == true {
+      @media (max-width: 750px){
+        float: left;
+      }
+    }
+  }
+}
+
+.popup-all{
+  width: 423px;
+  height: auto;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px 0;
+  @if $adaptive == true {
+    @media (max-width: 450px){
+      width: 95%;
+    }
+  }
+  h3{
+    color: #000000;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  form{
+    width: 320px;
+    margin: 0 auto;
+    @if $adaptive == true {
+      @media (max-width: 450px){
+        width: 85%;
+      }
+    }
+    p{
+      text-align: left;
+      color: rgba(0, 0, 0, .5);
+      margin: 5px 0;
+      margin-top: 10px;
+    }
+    label{
+      input{
+        margin-top: 0;
+        &:hover,&:focus{
+          background-color: transparent;
+          background-image: url("../img/input.png");
+          @if $adaptive == true {
+            @media (max-width: 450px){
+              background-image: none;
+            }
+          }
+        }
+      }
+    }
+    input{
+      width: 100%;
+      height: 35px;
+      background-image: url("../img/input.png");
+      background-repeat: no-repeat;
+      border: none;
+      outline: none;
+      padding-left: 20px;
+      margin-top: 7px;
+      border-radius: 50px;
+      transition: .2s all;
+      @if $adaptive == true {
+        @media (max-width: 450px){
+          background-image: none;
+          border: 1px solid purple;
+        }
+      }
+      &:hover,&:focus{
+        background-color: darken(white, 10);
+        background-image: none;
+      }
+    }
+    button{
+      margin-top: 20px;
+    }
+  }
+}
+
+
+
+
+
+
 
 
 
